@@ -1,0 +1,22 @@
+/*CSS for donutMaster.html Code Fellows Foundations 1 Assignment 4*/
+
+body {
+  background-color: #F7F7FA;
+}
+
+th, td {
+  border-top: 1px solid red;
+  border-right: 1px solid red;
+  border-left: 1px solid red;
+  border-bottom: 1px solid red;
+  text-align: center;
+  padding: 5px;
+}
+
+.headerReplacement {
+  text-indent: -9999px;
+  width: 175px;
+  height: 110px;
+  background: url(http://timali4man.com/Images/donutMasterLogo1.gif);
+}
+
