@@ -1,8 +1,8 @@
 //javascript for donutMaster.html CodeFellows Foundations 1 Assignment 4
 
-var DonutMaster = function(location, minCustPerHour, maxCustPerHour,
+var DonutMaster = function(shopLoc, minCustPerHour, maxCustPerHour,
     avgDonutPerCust, businessHours) {
-  this.location = location;
+  this.shopLoc = shopLoc;
   this.min = minCustPerHour;
   this.max = maxCustPerHour;
   this.avg = avgDonutPerCust;
@@ -15,16 +15,18 @@ var DonutMaster = function(location, minCustPerHour, maxCustPerHour,
   return Math.round(this.donutsPerHour() * this.hrs);
   };
 };
+var hrs = this.hrs;
 var stores = [];
-var addNewShop = function(location, minCustPerHour, maxCustPerHour,
+var addNewShop = function(shopLoc, minCustPerHour, maxCustPerHour,
   avgDonutPerCust, businessHours) {
-  var newShop = new DonutMaster(location, minCustPerHour, maxCustPerHour,
+  var newShop = new DonutMaster(shopLoc, minCustPerHour, maxCustPerHour,
     avgDonutPerCust, businessHours);
   stores.push(newShop);
 };
+
 var generateReport = function() {
   for (var index = 0; index < stores.length; index++) {
-    console.log("The " + stores[index].location + " location averages " +
+    console.log("The " + stores[index].shopLoc + " location averages " +
     Math.round(this.stores[index].donutsPerHour()) + " donuts per hour and " +
     Math.round(this.stores[index].donutsPerDay()) + " donuts per day.");
   }
