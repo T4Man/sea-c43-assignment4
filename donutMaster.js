@@ -1,5 +1,4 @@
 //javascript for donutMaster.html CodeFellows Foundations 1 Assignment 4
-
 var DonutMaster = function(shopLoc, minCustPerHour, maxCustPerHour,
     avgDonutPerCust, businessHours) {
   this.shopLoc = shopLoc;
