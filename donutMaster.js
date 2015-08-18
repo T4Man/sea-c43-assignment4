@@ -14,7 +14,6 @@ var DonutMaster = function(shopLoc, minCustPerHour, maxCustPerHour,
   return Math.round(this.donutsPerHour() * this.hrs);
   };
 };
-var hrs = this.hrs;
 var stores = [];
 var addNewShop = function(shopLoc, minCustPerHour, maxCustPerHour,
   avgDonutPerCust, businessHours) {
