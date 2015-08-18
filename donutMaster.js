@@ -7,11 +7,11 @@ var TopPotShop = function(shopLoc, minCustPerHour, maxCustPerHour,
   this.avg = avgDonutPerCust;
   this.hrs = businessHours;
   this.donutsPerHour = function() {
-  return Math.round(Math.random() * (this.max - this.min + 1) +
+    return Math.round(Math.random() * (this.max - this.min + 1) +
     this.min) * this.avg;
   };
   this.donutsPerDay = function() {
-  return Math.round(this.donutsPerHour() * this.hrs);
+    return Math.round(this.donutsPerHour() * this.hrs);
   };
 };
 
@@ -21,14 +21,14 @@ var DonutMaster = function() {
       maxCustPerHour, avgDonutPerCust, businessHours) {
     var newShop = new TopPotShop(shopLoc, minCustPerHour,
       maxCustPerHour, avgDonutPerCust, businessHours);
-      this.stores.push(newShop);
-  };
+    this.stores.push(newShop);
+    };
 
   this.generateReport = function() {
     for (var index = 0; index < this.stores.length; index++) {
-    console.log("The " + this.stores[index].shopLoc + " location averages " +
-    Math.round(this.stores[index].donutsPerHour()) + " donuts per hour and " +
-    Math.round(this.stores[index].donutsPerDay()) + " donuts per day.");
+      console.log("The " + this.stores[index].shopLoc + " location averages " +
+      Math.round(this.stores[index].donutsPerHour()) + " donuts per hour and " +
+      Math.round(this.stores[index].donutsPerDay()) + " donuts per day.");
     }
   };
 };
