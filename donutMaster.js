@@ -14,7 +14,7 @@ var TopPotShop = function(shopLoc, minCustPerHour, maxCustPerHour,
     return Math.round(this.donutsPerHour() * this.hrs);
   };
 };
-
+//---------------------------------------------------------------------
 var DonutMaster = function() {
   this.stores = [];
   this.addNewShop = function(shopLoc, minCustPerHour,
@@ -32,7 +32,7 @@ var DonutMaster = function() {
     }
   };
 };
-
+//---------------------------------------------------------------------
 var dm = new DonutMaster();
 
 dm.addNewShop("Bellevue", 4, 49, 4, 10);
@@ -43,3 +43,8 @@ dm.addNewShop("Wedgewood",2, 28, 1.25, 10);
 dm.addNewShop("Ballard", 8, 58, 3.75, 14);
 
 dm.generateReport();
+
+
+
+
+
