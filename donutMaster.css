@@ -1,4 +1,8 @@
-/*CSS for donutMaster.html Code Fellows Foundations 1 Assignment 4*/
+/*CSS for donutMaster.html Code Fellows Foundations 1 Assignment 5*/
+* {
+  max-width: 900px;
+}
+
 body {
   background-color: #F7F7FB;
   font-family: Georgia, Times, serif;
@@ -14,13 +18,43 @@ th, td {
   padding: 5px;
 }
 
+h3 {
+  font-family: "Comic Sans MS", cursive, sans-serif;
+  text-align: center;
+  margin-top: 0;
+}
+
+table {
+  margin-left: 10%;
+}
+
 .headerReplacement {
   text-indent: -9999px;
   width: 175px;
   height: 110px;
   background: url(http://timali4man.com/Images/donutMasterLogo1.gif);
+  margin-bottom: -110px;
 }
 
+img {
+ margin-left: 36%;
+ margin-right: 33%;
+}
 
+.highlighted {
+  background-color: rgb(255, 255, 204)
+}
+
+.sum {
+  background-color: #8AB8E6;
+}
+
+#headingsRow {
+  background-color: pink;
+}
+
+#empty {
+  background-color: #777;
+}
 
 
