@@ -28,17 +28,17 @@ table {
   margin-left: 10%;
 }
 
+img {
+ margin-left: 36%;
+ margin-right: 33%;
+}
+
 .headerReplacement {
   text-indent: -9999px;
   width: 175px;
   height: 110px;
   background: url(http://timali4man.com/Images/donutMasterLogo1.gif);
   margin-bottom: -110px;
-}
-
-img {
- margin-left: 36%;
- margin-right: 33%;
 }
 
 .highlighted {
